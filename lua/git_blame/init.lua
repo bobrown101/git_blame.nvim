@@ -55,12 +55,12 @@ local function set_cursor_position(window, position)
   return vim.api.nvim_win_set_cursor(window, position)
 end
 
-local function git_blame.init()
+function git_blame.init()
   --no-op
   print('asdfasdf')
 end
 
-local function git_blame.run() 
+function git_blame.run() 
   local starting_window = get_current_window()
 
   vim.api.nvim_win_set_option(starting_window, 'scrollbind', true)
