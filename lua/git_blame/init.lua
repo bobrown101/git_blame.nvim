@@ -55,10 +55,11 @@ local function set_cursor_position(window, position)
   return vim.api.nvim_win_set_cursor(window, position)
 end
 
-function git_blame.init()
+local function git_blame.init()
   --no-op
+  print('asdfasdf')
 end
-print('loaded git_blame')
+
 local function git_blame.run() 
   local starting_window = get_current_window()
 
