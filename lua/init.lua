@@ -58,7 +58,7 @@ end
 function git_blame.init()
   --no-op
 end
-
+print('loaded git_blame')
 local function git_blame.run() 
   local starting_window = get_current_window()
 
