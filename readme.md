@@ -14,3 +14,8 @@ use { 'bobrown101/git-blame.nvim' }
 ```lua
 :lua require('git_blame').run()
 ```
+
+## Keymap
+```lua
+vim.api.nvim_set_keymap('n', '<space>g', "<cmd>lua require('git_blame').run()<cr>", { noremap = true, silent = true })
+```
